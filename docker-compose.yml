@@ -12,5 +12,3 @@ services:
       - ./web:/usr/share/nginx/html
     ports:
       - "3001:80"
-
-Base directory does not exist: /opt/build/repo/llm
