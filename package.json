@@ -1,0 +1,20 @@
+
+Additionally, you should create a simple `package.json` to help Netlify identify this as a web project:
+
+```json
+{
+  "name": "local-deepseek",
+  "version": "1.0.0",
+  "description": "Local DeepSeek AI Chat Interface",
+  "main": "web/index.html",
+  "scripts": {
+    "start": "cd web && python -m http.server 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/local-deepseek.git"
+  },
+  "keywords": ["ai", "deepseek", "chat"],
+  "author": "Your Name",
+  "license": "MIT"
+}
