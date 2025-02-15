@@ -1,0 +1,17 @@
+[build]
+  publish = "web"
+  command = "echo 'No build command needed'"
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://localhost:11434/api/:splat"
+  status = 200
+  force = true
+
+[dev]
+  framework = "#custom"
+  command = "npm start"
+  targetPort = 3001
+  port = 8888
+  publish = "web"
+  autoLaunch = false

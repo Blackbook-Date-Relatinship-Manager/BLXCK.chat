@@ -15,14 +15,14 @@ themeToggle.addEventListener('click', () => {
 });
 
 // Chat history management
-const chatHistory = document.getElementById('chat-history');
+const chatHistoryElement = document.getElementById('chat-history');
 const newChatButton = document.getElementById('new-chat');
 
 function addChatToHistory(question) {
     const chatItem = document.createElement('div');
     chatItem.classList.add('chat-history-item');
     chatItem.textContent = question.substring(0, 30) + '...';
-    chatHistory.prepend(chatItem);
+    chatHistoryElement.prepend(chatItem);
 }
 
 // Configure Showdown and Prism
@@ -97,7 +97,7 @@ async function run() {
     let prompt = document.querySelector("#question").value;
     document.querySelector("#think").innerHTML = "Thinking...";
     
-    const response = await fetch("http://localhost:11434/api/generate", {
+    const response = await fetch("/api/generate", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
