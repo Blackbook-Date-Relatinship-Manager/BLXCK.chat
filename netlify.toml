@@ -8,14 +8,17 @@ local-deepseek/
     └── style.css
 
 [build]
-  publish = "web"
-  command = "echo 'No build command needed'"
+  command = "npm run build"
+  publish = "build"
+  base = "/"
+
+[build.environment]
+  NODE_VERSION = "18"
 
 [[redirects]]
-  from = "/api/*"
-  to = "http://localhost:11434/api/:splat"
+  from = "/*"
+  to = "/index.html"
   status = 200
-  force = true
 
 [dev]
   framework = "#custom"

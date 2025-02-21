@@ -4,7 +4,10 @@
   "description": "Local DeepSeek AI Chat Interface",
   "main": "web/index.html",
   "scripts": {
-    "start": "cd web && python -m http.server 3001"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
