@@ -9,7 +9,6 @@
 
 [build.environment]
   NODE_VERSION = "16"
-  NPM_VERSION = "8"
   REACT_APP_API_URL = "http://localhost:11434"
 
 [[plugins]]
@@ -30,4 +29,9 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
   status = 200
