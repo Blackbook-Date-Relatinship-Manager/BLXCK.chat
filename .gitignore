@@ -1,3 +1,9 @@
+# Build
+/build
+/dist
+.cache
+.netlify
+
 # Dependencies
 /node_modules
 /.pnp
@@ -6,36 +12,31 @@
 # Testing
 /coverage
 
-# Production
-/build
+# Environment
+.env*
+!.env.example
+!.env.production
 
-# Large files (excluded completely)
-/ollama-models
+# Large files & Models
+/models
 *.gguf
 *.bin
 *.model
 *.weights
+/ollama-models
+.git/lfs
 *.tar
 *.gz
-/models
-.git/lfs
-.git/hooks
-dist/
-.cache/
+/data
+/checkpoints
 
 # Misc
 .DS_Store
-.env*
-!.env.example
-.netlify.toml.local
-
-# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-*.log
 
 # IDE
 .idea/
 .vscode/
-temp/
