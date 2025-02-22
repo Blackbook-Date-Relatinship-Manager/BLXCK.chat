@@ -1,11 +1,24 @@
 [build]
   base = "/"
-  command = "CI=false npm install && npm run build"
+  command = "npm run build"
   publish = "build"
 
+[dev]
+  framework = "create-react-app"
+  targetPort = 3001
+
 [build.environment]
-  NODE_VERSION = "18"
-  CI = "false"
+  NODE_VERSION = "16"
+  NPM_VERSION = "8"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+[context.production]
+  environment = { NODE_ENV = "production" }
+
+[context.deploy-preview]
+  environment = { NODE_ENV = "development" }
 
 [[redirects]]
   from = "/*"

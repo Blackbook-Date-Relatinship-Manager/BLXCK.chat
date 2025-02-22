@@ -20,6 +20,17 @@ docker compose exec ollama ollama pull deepseek-r1:7b
 
 4. Run the website on http://localhost:3001
 
+# BLXCK.chat
+
+## Model Setup
+The DeepSeek model files are not included in the repository. They will be downloaded automatically when running:
+
+```sh
+docker compose exec ollama ollama pull deepseek-r1:7b
+```
+
+This keeps the repository size small while ensuring the model is available when needed.
+
 # Screenshots
 
 Homepage:

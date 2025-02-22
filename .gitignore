@@ -1,2 +1,41 @@
-ollama-models/
-node_modules
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+
+# Large files (excluded completely)
+/ollama-models
+*.gguf
+*.bin
+*.model
+*.weights
+*.tar
+*.gz
+/models
+.git/lfs
+.git/hooks
+dist/
+.cache/
+
+# Misc
+.DS_Store
+.env*
+!.env.example
+.netlify.toml.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# IDE
+.idea/
+.vscode/
+temp/
