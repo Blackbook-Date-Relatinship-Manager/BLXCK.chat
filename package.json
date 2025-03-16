@@ -34,6 +34,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
     "showdown": "^2.1.0",
+    "typescript": "^4.9.5",
     "web-vitals": "^3.5.2"
   },
   "devDependencies": {
@@ -61,6 +62,9 @@
     "postcss": "^8.4.31",
     "nth-check": "^2.0.1",
     "serialize-javascript": "^6.0.2"
+  },
+  "resolutions": {
+    "typescript": "^4.9.5"
   },
   "browserslist": {
     "production": [
